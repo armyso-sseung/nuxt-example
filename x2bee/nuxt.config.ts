@@ -1,20 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// @ts-ignore
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  typescript: {
-    typeCheck: true
+  imports: {
+    autoImport: false
   },
-  modules: [
-    'vuetify-nuxt-module',
-    '@nuxtjs/tailwindcss'
-  ],
-  vuetify: {
-    moduleOptions: {
-      /* module specific options */
-    },
-    vuetifyOptions: {
-      /* vuetify options */
+  typescript: {
+    typeCheck: true,
+    tsConfig: {
+      compilerOptions: {
+        baseUrl: '.'
+      }
     }
-  }
+  },
+  srcDir: 'src',
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
 })
