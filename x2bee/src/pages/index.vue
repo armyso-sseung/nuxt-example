@@ -1,6 +1,6 @@
 <template>
-    <div>
-        Index Page
+    <div class="flex justify-center">
+        test
     </div>
 </template>
 
