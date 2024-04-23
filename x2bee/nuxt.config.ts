@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     typeCheck: true,
     tsConfig: {
       compilerOptions: {
-        baseUrl: '.'
+        baseUrl: '.',
+        moduleResolution: 'node',
       }
     }
   },
