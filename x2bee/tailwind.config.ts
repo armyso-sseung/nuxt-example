@@ -3,10 +3,12 @@ import { breakPoints } from './src/lib/common/ui/variables'
 
 const config: Config = {
   content: [
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/hooks/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/lib/common/ui/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/components/**/*.{js,ts,vue,jsx,tsx,mdx}',
+    './src/layouts/**/*.{js,ts,vue,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,vue,jsx,tsx,mdx}',
+    './src/lib/common/component/**/*.{js,ts,vue,jsx,tsx,mdx}',
+    './src/lib/common/ui/**/*.{js,ts,vue,jsx,tsx,mdx}',
+    './src/lib/common/**/**/*.{js,ts,vue,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {

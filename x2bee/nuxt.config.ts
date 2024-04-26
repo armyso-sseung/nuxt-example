@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false
   },
+  css: ['~/assets/styles/page/globals.css'],
   typescript: {
     typeCheck: true,
     tsConfig: {

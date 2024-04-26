@@ -1,5 +1,5 @@
 <template>
-    <SwiperSlide class="w-auto">
+    <SwiperSlide :style="{ width: 'auto' }">
         <button
             type="button"
             :data-state="`${ active ? 'active' : 'inactive' }`"
@@ -21,7 +21,9 @@ import type { CommonEmits } from '~/types/common/commonTypes'
 
 type SwiperEmits = Pick<CommonEmits, "click">
 defineEmits<SwiperEmits>()
-defineProps<SwiperSlideProps>()
+withDefaults(defineProps<SwiperSlideProps>(), {
+    active: false
+})
 </script>
 
 <style scoped>

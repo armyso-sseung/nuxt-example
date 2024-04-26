@@ -14,7 +14,7 @@
 import type { SwiperProps } from '~/types/common/components-type'
 import { Swiper } from 'swiper/vue'
 
-const { type } = withDefaults(defineProps<SwiperProps>(), {
+withDefaults(defineProps<SwiperProps>(), {
     type: 'page'
 })
 
